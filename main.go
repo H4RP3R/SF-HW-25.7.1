@@ -9,10 +9,10 @@ import (
 
 func main() {
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Введите целое число: ")
+	fmt.Print("Введите данные: ")
 	data, err := reader.ReadString('\n')
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Вы ввели число: %v\n", data)
+	fmt.Printf("Вы ввели следующие данные: %v\n", data)
 }
